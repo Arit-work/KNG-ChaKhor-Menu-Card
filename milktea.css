@@ -332,3 +332,90 @@ body {
     rotate: 45deg;
     transform: translateY(128%);
 }
+
+/* hamburger menu starts here */
+
+#HamBurgerMenuContainer {
+    height: 5vh;
+    width: 5vh;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.5s ease-in-out;
+    border-radius: 25px;
+    overflow: hidden;
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    z-index: 14;
+    backdrop-filter: blur(10px);
+}
+
+#HBM-container {
+    height: 5vh;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* HamBurgerMenuContainer height = HamBurgerMenuContainer width = icon-container height = icon-container width */
+/* Also check that in JS */
+#HBM-line1 {
+    height: 10%;
+    width: 60%;
+    background-color: white;
+    border-radius: 50px;
+    translate: 0% 100%;
+    transform-origin: left center;
+    transition: all 0.5s ease-in-out;
+}
+
+#HBM-line2 {
+    height: 10%;
+    width: 80%;
+    background-color: white;
+    border-radius: 50px;
+    transform-origin: center center;
+    transition: all 0.5s ease-in-out;
+}
+
+#HBM-line3 {
+    height: 10%;
+    width: 60%;
+    background-color: white;
+    border-radius: 50px;
+    translate: 0% -100%;
+    transform-origin: right center;
+    transition: all 0.5s ease-in-out;
+}
+
+#HBMitems{
+    display: none;
+    opacity: 0%;
+    transition: all 0.5s ease-in-out 1s;
+}
+
+.HBMtext {
+    text-align: center;
+    font-family: arca-majora3;
+}
+
+#home {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+#UIversion{
+    border-top: 3px solid white;
+    height: 10%;
+    display: none;
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
+#version{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10%;
+}
